@@ -5,8 +5,8 @@
 }
 body {
 font-family: "Segoe UI", Arial, sans-serif;
-background: #f2f4f7;
-color: #222;
+background: #0f0f12;
+color: #d7d7d7;
 line-height: 1.6;
 }
 
@@ -15,7 +15,7 @@ line-height: 1.6;
 header{
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+    background: linear-gradient(135deg, #0b0b13, #1d1d2f);
     color: #fff;
 }
 header h1{
@@ -25,4 +25,140 @@ header h1{
 header p{
     font-size: 1.1rem;
     opacity: 0.9;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav{
+    background: #15151f;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #2d2d3a;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px;
+    flex-wrap: wrap;
+    
+}
+nav a{
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+nav a:hover {
+color:#00c3ff;
+}
+
+
+/* ----------All Section & All H2 Style ---------- */
+
+section {
+    max-width: 950px;
+    background: #1a1a24;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.4);
+}
+
+h2 {
+    margin-bottom: 16px;
+    border-left: 6px solid #00c3ff;
+    padding-left: 12px;
+    color: #eaeaea;
+    font-size: 1.6rem;
+}
+
+
+/* ---------- About Section ---------- */
+
+#about img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 18px;
+    border: 3px solid #00c3ff;
+}
+#about {
+    text-align: center;
+}
+#about p{
+    text-align: justify;
+}
+article{
+    font-weight: bold;
+}
+
+
+/* ---------- Table ---------- */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background: #272733;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+    background-color: #0b0b13;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #00d0ff;
+    text-decoration: none;
+}
+
+.contact{
+    font-size: 50px;
+    
+}
+
+
+/* ---------- Responsive Mobile View ---------- */
+@media (max-width: 600px) {
+header h1 {
+    font-size: 2rem;
+}
+
+
+nav ul {
+    gap: 15px;
+}
+
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+#about img {
+    width: 130px;
+    height: 130px;
+}
 }
